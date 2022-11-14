@@ -19,16 +19,6 @@
     position: relative;
 }
 
-/* sidebar */
-
-aside{
-    width: 50px;
-    height: 100%;
-    background-color: black;
-}
-
-/* main */
-
 main{
     width: calc(100vw - 50px);
     height: 100%;
@@ -37,7 +27,15 @@ main{
     right: 0;
 }
 
-/* header */
+/************ sidebar ************/
+
+aside{
+    width: 50px;
+    height: 100%;
+    background-color: black;
+}
+
+/************ header *************/
 
 header{
     position: fixed;
@@ -56,7 +54,7 @@ header{
     cursor: pointer;
 }
 
-/* contents */
+/*********** contents ***************/
 
 .contents{
     width: 100%;
@@ -67,7 +65,30 @@ header{
     overflow-y: auto;
 }
 
-/* footer */
+.list-contents{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.list-contents li{
+    padding: 0px 25px 20px 0px;
+    font-size: 12px;
+    cursor: pointer;
+    color: rgba(112,115,120,255);
+}
+
+.hr-hor{
+    margin: 0px 25px;
+    border-width: 0;
+    height: 2px;
+    background-color: greenyellow;
+}
+
+
+
+/************ footer *****************/
 
 footer{
     height: 100px;
