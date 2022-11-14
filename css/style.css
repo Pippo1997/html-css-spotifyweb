@@ -74,7 +74,7 @@ header{
 
 .list-contents li{
     padding: 0px 25px 20px 0px;
-    font-size: 12px;
+    font-size: 11px;
     cursor: pointer;
     color: rgba(112,115,120,255);
 }
@@ -86,6 +86,23 @@ header{
     background-color: greenyellow;
 }
 
+h2{
+    padding-bottom: 20px;
+}
+
+.row-Recently{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-Recently{
+    width: calc(100% /2);
+    padding: 0 10px 0 0;
+}
+
+.col-Recently img{
+    width: 100%;
+}
 
 
 /************ footer *****************/
@@ -223,5 +240,18 @@ footer{
         font-size: 15px;
     }
 
+    .col-Recently{
+        width: calc(100% /4);
+    }
+
 }
 
+/* descktop */
+
+@media screen and (min-width: 992px){
+
+    .col-Recently{
+        width: calc(100% / 6);
+    }
+
+}
