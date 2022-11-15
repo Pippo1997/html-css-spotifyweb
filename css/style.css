@@ -133,6 +133,10 @@ footer{
     margin-right: 10px;
 }
 
+.display{
+    display: none;
+}
+
 .nome-brano{
     margin-right: 10px;
 }
@@ -226,6 +230,11 @@ footer{
     .button-header{
         margin: 10px 160px 10px 0px;
     }
+
+    .display{
+        display: block;
+    }
+
 }
 
 /* tablet */
