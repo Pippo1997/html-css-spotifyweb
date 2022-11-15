@@ -8,6 +8,10 @@
     display: flex;
 }
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 /***********************************
             CONTENTS CSS
 ************************************/
@@ -33,6 +37,94 @@ aside{
     width: 50px;
     height: 100%;
     background-color: black;
+    padding: 10px;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.nav-top{
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.nav-bottom{
+    height: 100px;
+}
+
+.nav-bottom .flex{
+    padding: 5px;
+}
+
+.nav-menu .flex{
+    padding: 5px 0px 5px 0px;
+}
+
+.playlist{
+    overflow: hidden;
+    height: 50vh;
+    display: none;
+}
+
+.logo-small{
+    display: block;
+}
+
+.john{
+    display: none;
+}
+
+.playlist li{
+    padding: 10px;
+}
+
+.playlist ul{
+    list-style-type: none;
+    padding-left: 15px;
+    overflow-y: auto;
+    height: 80%;
+}
+
+.playlist-crea{
+    display: flex;
+    align-items: center;
+}
+
+.img-nav-menu{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.fa-square-plus{
+    font-size: 30px;
+    margin: 5px;
+}
+
+.img-down{
+    width: 15px;
+    margin-right: 5px;
+}
+
+.img-profile{
+    width: 20px;
+    background-color: rgba(90,90,90,255);
+    border-radius: 50%;
+}
+
+.greyhover{
+    font-size: 13px;
+    color: rgba(90,90,90,255);
+    display: none;
+    cursor: pointer;
+}
+
+.greyhover:hover{
+    color: white;
 }
 
 /************ header *************/
@@ -76,7 +168,7 @@ header{
     padding: 0px 25px 20px 0px;
     font-size: 11px;
     cursor: pointer;
-    color: rgba(112,115,120,255);
+    color: rgba(90,90,90,255);
 }
 
 .hr-hor{
@@ -108,7 +200,7 @@ h2{
 
 .grey{
     padding: 5px 0px 25px 0px;
-    color: grey;
+    color: rgba(90,90,90,255);
     font-size: 13px;
 }
 
@@ -119,8 +211,6 @@ h2{
 .radius{
     border-radius: 50%;
 }
-
-
 
 /************ footer *****************/
 
@@ -145,7 +235,7 @@ footer{
 }
 
 .img-footer{
-    width: 40px;
+    width: 55px;
     object-fit: cover;
     margin-right: 10px;
 }
@@ -160,7 +250,7 @@ footer{
 
 .content-grey{
     flex-direction: column;
-    color: grey;
+    color: rgba(90,90,90,255);
 }
 
 .icon-small{
@@ -274,11 +364,15 @@ footer{
     }
 
     .button-header{
-        margin: 10px 160px 10px 0px;
+        margin: 10px 170px 10px 0px;
     }
 
-    .display{
+    .display, .john, .greyhover, .playlist{
         display: block;
+    }
+
+    .logo-small{
+        display: none;
     }
 
 }

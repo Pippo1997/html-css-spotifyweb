@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
         <title>Spotify Web</title>
     </head>
     <body>
@@ -17,7 +20,49 @@
             <!-- sidebar -->
 
             <aside>
-                
+                <nav>
+                    <div class="nav-top">
+                        <div>
+                            <img class="john" src="./img/img/logo.svg" alt="logo-big">
+                            <img class="logo-small" src="./img/img/logo-small.svg" alt="logo-small">
+                        </div>
+                        <div class="nav-menu">
+                            <div class="flex">
+                                <span class="img-nav-menu"><img src="./img/img/home.svg" alt="home"></span><span class="greyhover">Home</span>
+                            </div>
+                            <div class="flex">
+                                <span class="img-nav-menu"><img src="./img/img/search.svg" alt="search"></span><span class="greyhover">Search</span>
+                            </div>
+                            <div class="flex">
+                                <span class="img-nav-menu"><img src="./img/img/libreria.svg" alt="libro"></span><span class="greyhover">La tua libreria</span>
+                            </div>
+                        </div>
+                        <div class="playlist">
+                            <h4>Playlist</h4>
+                            <div class="playlist-crea">
+                                <i class="fa-solid fa-square-plus"></i><span class="greyhover">Crea Playlist</span>
+                            </div>
+                            <ul>
+                                <li><span class="greyhover">Playlist</span></li>
+                                <li><span class="greyhover">Playlist</span></li>
+                                <li><span class="greyhover">Playlist</span></li>
+                                <li><span class="greyhover">Playlist</span></li>
+                                <li><span class="greyhover">Playlist</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-bottom">
+                        <div class="flex">
+                            <img class="img-down" src="./img/img/download.svg" alt="download">
+                            <span class="greyhover">Installa app</span>
+                        </div>
+                        <hr class="john">
+                        <div class="flex">
+                            <img class="img-profile" src="./img/img/profile.svg" alt="profile">
+                            <h4 class="john">John Doe</h4>
+                        </div>
+                    </div>
+                </nav>
             </aside>
 
             <!-- end sidebar -->
@@ -38,7 +83,7 @@
 
                 <div class="contents">
                     <!-- section 1 -->
-                    <section>
+                    <div>
                         <ul class="list-contents">
                             <li>IN EVIDENZA <hr class="hr-hor"></li>
                             <li>PODCAST</li>
@@ -47,10 +92,10 @@
                             <li>NUOVE USCITE</li>
                             <li>SCOPRI</li>
                         </ul>
-                    </section>
+                    </div>
                     <!-- section 2 -->
                     <section>
-                        <h2>Recetly pleyed</h2>
+                        <h2>Recetly played</h2>
                         <div class="row-Recently">
                             <div class="col-Recently">
                                 <img src="./img/img/metal_lifting.jpg" alt="metal">
@@ -113,6 +158,7 @@
                                     <h3>Daily Mix</h3>
                                 </div>
                             </div>
+                        </div>
                     </section>
                     <!-- section 4 -->
                     <section>
@@ -131,6 +177,7 @@
                                     <h3>Lana Del Rey</h3>
                                 </div>
                             </div>
+                        </div>
                     </section>
                 </div>
 
